@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .inputBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #taskInput {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #addBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1396f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+  }
+  
+  .task-text {
+    margin-right: 25vh;
+    flex-grow: 1;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+  }
+  
+  .complete-btn,
+  .remove-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .complete-btn {
+    background-color: #2ecc71;
+    margin-left: auto;
+  }
+  
+  .remove-btn {
+    background-color: #e74c3c;
+    margin-left: 10px;
+  }
+  
+  .complete-btn:hover {
+    background-color: #27ae60;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .task-item {
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+  }
+    .task-text {
+      margin-right: 25vh;
+      flex-grow: 1;
+    }
+    .task-item,
+    .complete-btn,
+    .remove-btn {
+      margin:  5px;
+    }
+  }
+  
